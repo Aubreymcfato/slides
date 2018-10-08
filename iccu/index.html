@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Le biblioteche per il digitale</title>
+
+		<meta name="description" content="Immaginare biblioteche 2017">
+		<meta name="author" content="Andrea Zanni">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+            <div class="slides">
+
+                
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+<script type="text/template">
+
+<!-- .slide: data-background="#bb0000" -->
+
+##Le biblioteche per il digitale (aperto)
+
+###[Andrea Zanni](http://aubreymcfato.com)
+
+
+
+Wikimedia Italia
+
+---
+
+<!-- .slide: data-background="#0A2A34" -->
+
+###Modelli di biblioteche digitali open
+
+--
+
+<!-- .slide: data-background="#0A2A34" -->
+
+* [New York Public Library](https://digitalcollections.nypl.org/)
+* [The Commons](https://www.flickr.com/commons/)
+* [Internet Archive](http://archive.org)
+* [Metropolitan Museum of Art (METS)](https://github.com/metmuseum/openaccess)
+
+
+--
+
+<!-- .slide: data-background="#0A2A34" -->
+
+* utilizzo di licenze estremamente aperte come la CC0, cioè una completa liberalizzazione del dato.
+* libero riuso delle immagini
+* utilizzo di API aperte e di standard web (es. API REST, JSON).
+* utilizzo di piattaforme come GitHub, standard _de facto_ della comunità di sviluppatori open source
+
+--
+
+<!-- .slide: data-background="#0A2A34" -->
+
+uso, riuso, remix, innovazione
+
+--
+
+<!-- .slide: data-background="#0A2A34" -->
+
+##Interoperabilità
+
+--
+
+<!-- .slide: data-background="#0A2A34" -->
+
+* livello _legale_: licenza aperta (es. CC0)
+* livello _informatico_ e _tecnologico_: 
+    * formati strutturati e aperti: JSON, CSV, XML
+    * schema di metadati: Dublin Core, Schema.org
+    * procedure aperte: API, SPARQL
+
+--
+
+<!-- .slide: data-background="#0A2A34" -->
+
+_[library as a platform](https://lj.libraryjournal.com/2012/09/future-of-libraries/by-david-weinberger/#)_
+
+---
+
+<!-- .slide: data-background="#03004d" -->
+
+##Filiera dell'open
+
+--
+
+<!-- .slide: data-background="#03004d" -->
+
++ [Wikipedia](http://it.wikipedia.org) 
++ [Wikisource](http://it.wikisource.org)
++ [Wikidata](http://wikidata.org)
+
+--
+
+<!-- .slide: data-background="#03004d" -->
+
+* comunitari
+* partecipativi  
+* accesso e produzione di conoscenza
+
+--
+
+<!-- .slide: data-background="#03004d" -->
+
+biblioteca > Internet Archive > Wikisource > aggregatori
+
+--
+
+<!-- .slide: data-background="#03004d" -->
+
+biblioteca di Trento > [Internet Archive](https://archive.org/details/cittadelsole_images) > [Wikisource][1] > [MLOL](http://medialibrary.it/media/schedaopen.aspx?id=921212), Rete Indaco
+
+[1]: https://it.wikisource.org/wiki/La_Citt%C3%A0_del_Sole_(manoscritto,_1602)
+
+---
+
+<!-- .slide: data-background="#bb0000" -->
+
+##Grazie
+
+###[babele.io/slides/iccu](http://babele.io/slides/iccu)
+
+([mail](mailto:zanni.andrea84@gmail.com), [twitter](http://twitter.com/aubreymcfato), [blog](http://aubreymcfato.com))
+
+</script>
+</section>
+
+
+
+            </div>
+
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			//Lista di colori buoni
+			//#bb0000	rosso
+			//#0A2A34	petrolio
+			//#ffffff	bianco
+			//niente	nero
+			//#03004d	blu
+			//#006633	verde
+			//#eec803	#1a00ff	#00bcff	#e800ff	#9fb9a7 
+
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    
+                    
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
