@@ -1,12 +1,12 @@
 
 Luogo per slides collaborative e online, scritte in markdown.
 
-###Per creare una nuova serie di slides
+### Per creare una nuova serie di slides
 
 + Copia cartella esistente nel repo in locale. 
 + Cambia nome cartella, modifica metadati `index.html`, lavora su quello.
 
-###Per lavorare sulle slides
+### Per lavorare sulle slides
 + Per feedback immediati sul layout, apri `index.html` con il browser.
 + Ogni tanto, fai il commit delle modifiche al file. Prima al `master`, ma soprattutto al `gh-pages`:
 
